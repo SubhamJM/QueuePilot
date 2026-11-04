@@ -1,0 +1,9 @@
+target/
+*/target/
+.idea/
+*.iml
+.vscode/
+data/
+*.log
+.env
+benchmark-results/

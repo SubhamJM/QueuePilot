@@ -1,0 +1,30 @@
+{
+  "taskType": "file-checksum",
+  "displayName": "File checksum",
+  "description": "Computes the SHA-256, SHA-1 or MD5 digest of an uploaded file.",
+  "inputSchema": {
+    "fields": [
+      {
+        "name": "file",
+        "type": "FILE",
+        "required": true,
+        "description": "File to hash"
+      },
+      {
+        "name": "algorithm",
+        "type": "ENUM",
+        "required": false,
+        "values": [
+          "SHA-256",
+          "SHA-1",
+          "MD5"
+        ],
+        "description": "Digest algorithm (default SHA-256)"
+      }
+    ]
+  },
+  "timeoutSeconds": 300,
+  "maxRetries": 3,
+  "defaultPriority": 5,
+  "defaultEstimatedMs": 2000
+}

@@ -1,0 +1,21 @@
+{
+  "taskType": "prime-sieve",
+  "displayName": "Prime sieve (example plugin)",
+  "description": "Counts primes up to 'limit' with the sieve of Eratosthenes. Shipped as a separate plugin jar.",
+  "inputSchema": {
+    "fields": [
+      {
+        "name": "limit",
+        "type": "INTEGER",
+        "required": true,
+        "min": 10,
+        "max": 500000000,
+        "description": "Upper bound (inclusive)"
+      }
+    ]
+  },
+  "timeoutSeconds": 300,
+  "maxRetries": 2,
+  "defaultPriority": 5,
+  "defaultEstimatedMs": 4000
+}

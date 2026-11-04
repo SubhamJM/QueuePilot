@@ -1,0 +1,27 @@
+{
+  "taskType": "monte-carlo-pi",
+  "displayName": "Monte Carlo pi",
+  "description": "Estimates pi from random samples. CPU-bound; run time grows linearly with 'samples'.",
+  "inputSchema": {
+    "fields": [
+      {
+        "name": "samples",
+        "type": "INTEGER",
+        "required": true,
+        "min": 1000,
+        "max": 2000000000,
+        "description": "Number of random points"
+      },
+      {
+        "name": "seed",
+        "type": "INTEGER",
+        "required": false,
+        "description": "Random seed"
+      }
+    ]
+  },
+  "timeoutSeconds": 600,
+  "maxRetries": 3,
+  "defaultPriority": 5,
+  "defaultEstimatedMs": 8000
+}

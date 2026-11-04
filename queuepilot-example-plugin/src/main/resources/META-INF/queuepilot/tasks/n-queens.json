@@ -1,0 +1,27 @@
+{
+  "taskType": "n-queens",
+  "displayName": "N-Queens solver",
+  "description": "Places n queens on an n x n board so none attack each other: counts every solution and shows the first one. Set requireSolution to fail when no solution exists (n = 2 or 3).",
+  "inputSchema": {
+    "fields": [
+      {
+        "name": "n",
+        "type": "INTEGER",
+        "required": true,
+        "min": 1,
+        "max": 16,
+        "description": "Board size (number of queens)"
+      },
+      {
+        "name": "requireSolution",
+        "type": "BOOLEAN",
+        "required": false,
+        "description": "Fail the job if the board has no solution"
+      }
+    ]
+  },
+  "timeoutSeconds": 300,
+  "maxRetries": 2,
+  "defaultPriority": 5,
+  "defaultEstimatedMs": 5000
+}
